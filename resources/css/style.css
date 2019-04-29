@@ -1,0 +1,227 @@
+/* Standard Styling Throughout Page */
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Signika Negative", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* Hidden Text */
+header .mobile-menu {
+  display: none;
+}
+
+.newsletter .mobile-view {
+  display: none;
+}
+
+#mobile-view-courses {
+  display: none;
+}
+
+/* Heading Styling */
+header {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px soild white;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+}
+
+/* Logo and Heading */
+.logo {
+  margin-left: 1.5rem;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  height: 2rem;
+  margin-right: 0.3rem;
+}
+
+.logo h1 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/*Nav Styling */
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  margin-right: 1.5rem;
+}
+
+/* Banner Styling */
+#banner {
+  background-color: rgba(210, 204, 161, 0.6);
+  margin-top: 4rem;
+}
+
+.large-banner {
+  width: 60%;
+  margin: 0;
+}
+
+.large-banner img {
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+#banner .headline {
+  width: 40%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+#banner h2 {
+  font-size: 3.4rem;
+  line-height: 1.1;
+}
+
+#banner h3 {
+  font-weight: 200;
+}
+
+#banner h2,
+#banner h3 {
+  margin-bottom: 2rem;
+}
+
+#banner h4 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.headline .login-button {
+  border-radius: 2px;
+  background-color: black;
+  width: 75%;
+  padding: 0.5rem 0;
+}
+
+h4 a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Information Styling */
+#information .content {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#information p {
+  padding: 1.5rem 0;
+  line-height: 1.4;
+  word-spacing: 0.1rem;
+  font-weight: 100;
+  font-family: "Rambla", sans-serif;
+}
+
+#information h6 {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+/* Side Info Styling */
+#info-col-1,
+#info-col-2 {
+  padding-bottom: 2rem;
+}
+
+#info-col-2 {
+  justify-content: flex-start;
+  width: 40%;
+  border-left: 0.5px solid rgba(63, 64, 63, 0.5);
+  padding-top: 1rem;
+}
+
+.newsletter .info-text {
+  width: 100%;
+}
+
+.desktop-view {
+  width: 35%;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.desktop-view img {
+  width: 100%;
+  height: auto;
+}
+
+#lecturer {
+  background-color: rgba(210, 204, 161, 0.4);
+}
+
+.info-text a {
+  text-decoration: none;
+  color: cadetblue;
+}
