@@ -56,6 +56,7 @@ h4 {
 p {
   font-size: 1rem;
   line-height: 1.2;
+  opacity: 0.8;
 }
 
 /* Hidden Text */
@@ -103,6 +104,10 @@ header {
   font-weight: 700;
 }
 
+#header h1 span {
+  opacity: 0.5;
+}
+
 /*Nav Styling */
 nav ul li {
   display: inline;
@@ -112,6 +117,7 @@ nav a {
   padding-left: 1rem;
   text-decoration: none;
   color: black;
+  opacity: 0.8;
 }
 
 nav {
@@ -138,10 +144,12 @@ nav {
   width: 40%;
   height: auto;
   margin: 2rem 0;
+  padding-right: 4rem;
+  opacity: 0.8;
 }
 
 #banner h2 {
-  font-size: 3.4rem;
+  font-size: 3.3rem;
   line-height: 1.1;
 }
 
@@ -164,6 +172,7 @@ nav {
   background-color: black;
   width: 75%;
   padding: 0.5rem 0;
+  opacity: 1;
 }
 
 h4 a {
@@ -179,15 +188,9 @@ h4 a {
 
 #information p {
   padding: 1.5rem 0;
-  line-height: 1.4;
   word-spacing: 0.1rem;
   font-weight: 100;
   font-family: "Rambla", sans-serif;
-}
-
-#information h6 {
-  font-size: 0.9rem;
-  font-weight: 100;
 }
 
 /* Side Info Styling */
@@ -203,13 +206,18 @@ h4 a {
   padding-top: 1rem;
 }
 
-.newsletter .info-text {
+.newsletter {
   width: 100%;
+}
+
+.info-text {
+  width: 65%;
+  margin-top: 2rem;
 }
 
 .desktop-view {
   width: 35%;
-  margin: 1rem 0 1rem 1rem;
+  margin: 1rem;
 }
 
 .desktop-view img {
@@ -221,7 +229,155 @@ h4 a {
   background-color: rgba(210, 204, 161, 0.4);
 }
 
+.info-text h3 {
+  font-weight: lighter;
+}
+
 .info-text a {
   text-decoration: none;
   color: cadetblue;
+}
+
+.info-text h3,
+.info-text p {
+padding-bottom: 0.5rem;
+}
+
+/* Courses Styling */
+#desktop-view-courses {
+  background-color: rgba(210, 204, 161, 0.4);
+  padding: 2rem 0;
+}
+
+#desktop-view-courses h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.courses .flex-row {
+  margin: 0 4.5rem;
+}
+
+.courses .flex-row:first-child{
+  margin-bottom: 2rem;
+}
+
+.flex-row .course-box:nth-child(1n+2) {
+  margin-left: 2rem;
+}
+
+.course-box {
+  width: 33.33%;
+  min-height: 100%;
+  padding-bottom: 1.5rem;
+  background-color: white;
+  }
+
+.course-img {
+  margin-bottom: 1rem;
+  }
+
+.course-img img {
+  width: 100%;
+  height: auto;
+}
+
+.course-box h3 {
+  margin: 0.5rem 3rem 0.5rem 1rem;
+  font-weight: lighter;
+}
+
+.course-box h4 {
+  font-weight: 100;
+  margin: 0 3rem 0 1rem;
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.course-box p {
+  font-weight: 100;
+  text-align: left;
+  word-wrap: normal;
+  margin: 0.5rem 3rem 0 1rem;
+}
+
+
+
+
+/* Thesis */
+#thesis {
+  background-color: rgba(246, 246, 246, 1);
+}
+
+#thesis h2 {
+  padding: 2rem 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.video {
+  width: 60%;
+  margin: 0 1.5rem 1.5rem 2rem;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+}
+
+.video h3 {
+  width: 100%;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.video p {
+  width: 90%;
+  text-align: justify;
+}
+
+/* Side Thesis Styling */
+.thesis-side {
+  width: 40%;
+}
+
+.thesis-img {
+  width: 35%;
+  height: auto;
+  padding: 0;
+}
+
+.thesis-img img {
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+}
+
+.thesis-text {
+  width: 60%;
+  margin-right: 2rem;
+}
+
+.thesis-text h3 {
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+
+#fisma {
+  background-color: rgba(244, 200, 200, 0.4);
+}
+
+/* Footer Styling */
+footer {
+  border-top: 0.5px solid rgba(63, 64, 63, 0.5);
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  opacity: 0.8;
+}
+
+footer p {
+  flex-grow: 1;
+}
+
+footer li {
+  padding-left: 1rem;
 }
