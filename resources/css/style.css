@@ -68,9 +68,6 @@ header .mobile-menu {
   display: none;
 }
 
-#mobile-view-courses {
-  display: none;
-}
 
 /* Heading Styling */
 header {
@@ -80,7 +77,7 @@ header {
   height: 4rem;
   position: fixed;
   z-index: 1;
-  border-bottom: 1px soild white;
+  border-bottom: 1px solid white;
   background-color: white;
   align-items: center;
   justify-content: space-between;
@@ -123,6 +120,29 @@ nav a {
 nav {
   margin-right: 1.5rem;
 }
+
+/* Mobile-Menu */
+@media only screen and (max-width: 480px) {
+  .logo h1 {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  nav {
+    width: 65%;
+  }
+
+  header .mobile-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto 0 auto 0;
+  }
+}
+
 
 /* Banner Styling */
 #banner {
@@ -178,6 +198,44 @@ nav {
 h4 a {
   text-decoration: none;
   color: white;
+}
+
+/* Mobile Banner */
+@media only screen and (max-width: 480px) {
+  #banner {
+    flex-direction: column;
+  }
+
+  #banner .large-banner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #banner .large-banner img {
+    width: 100%;
+    padding: 0;
+  }
+
+  #banner .headline {
+    padding-bottom: 2rem;
+    box-sizing: content-box;
+    height: auto;
+    justify-content: center;
+    margin: 0;
+  }
+
+  #banner h2 {
+    margin-left: 1rem;
+  }
+
+  #banner h3 {
+    margin: 0 1rem 1.125rem 1rem;
+  }
+  #banner .login-button {
+      margin: 0 1rem;
+      width: auto;
+  }
 }
 
 /* Information Styling */
@@ -243,6 +301,55 @@ h4 a {
 padding-bottom: 0.5rem;
 }
 
+/* Mobile-Information */
+@media only screen and (max-width: 480px) {
+  #information {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #info-col-1 {
+    display: none;
+  }
+
+  #info-col-2 {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 1rem 2rem 1rem;
+    border: none;
+  }
+
+  .desktop-view img {
+    display: none;
+  }
+
+  #info-col-2 .mobile-view {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  #info-col-2 .mobile-view img {
+    width: 100%;
+    margin: auto;
+  }
+
+  #info-col-2 .flex-col {
+     width: 100%;
+  }
+
+  #info-col-2 .flex-row {
+     width: 100%;
+     flex-direction: column;
+  }
+
+  #info-col-2 #lecturer {
+    background-color: rgba(0, 0, 0, 0)
+  }
+}
+
 /* Courses Styling */
 #desktop-view-courses {
   background-color: rgba(210, 204, 161, 0.4);
@@ -302,8 +409,69 @@ padding-bottom: 0.5rem;
   margin: 0.5rem 3rem 0 1rem;
 }
 
+/* Mobile Courses */
+@media only screen and (max-width: 480px) {
+  .course-img img {
+    display: none;
+  }
 
+  .course-img {
+    display: none;
+  }
 
+  .course-box h4 {
+    display: none
+  }
+
+  .course-box p {
+    display: none;
+  }
+
+  .course-box h3 {
+    margin: 1rem 0 1.5rem 1rem;
+    text-align: left;
+    padding: 0;
+  }
+
+  #course1 .course-box:first-child {
+    margin-top: 0;
+  }
+
+  #course2 .course-box:last-child {
+    margin-bottom: 0;
+  }
+
+  .flex-row .course-box:nth-child(1n+2) {
+    margin-left: 0;
+  }
+
+  .courses .flex-row:first-child {
+    margin-bottom: 0;
+  }
+
+  #desktop-view-courses {
+    padding: 2rem 0;
+  }
+  #desktop-view-courses h2 {
+    margin: 0 0 1rem 0;
+  }
+
+  .courses .flex-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-between;
+    margin: 0 1rem;
+  }
+
+  .course-box {
+    width: 100%;
+    margin: 0.25rem 0;
+    background-color: rgba(226, 192, 68, 1);
+    border-radius: 4px;
+    padding: 0;
+  }
+}
 
 /* Thesis */
 #thesis {
@@ -367,6 +535,27 @@ padding-bottom: 0.5rem;
   background-color: rgba(244, 200, 200, 0.4);
 }
 
+/* Thesis Mobile */
+@media only screen and (max-width: 480px) {
+  .video {
+    margin: 0 0 1.5rem 0;
+    width: 100%;
+  }
+
+  .video video {
+    width: 100%;
+    height: auto;
+  }
+
+  .video h3,
+  .video p,
+  .thesis-side {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 /* Footer Styling */
 footer {
   border-top: 0.5px solid rgba(63, 64, 63, 0.5);
@@ -380,4 +569,21 @@ footer p {
 
 footer li {
   padding-left: 1rem;
+}
+
+/* Footer Mobile */
+@media only screen and (max-width: 480px) {
+  footer {
+  margin: 1.5rem 0 0 0;
+  }
+
+  footer li {
+    display: none;
+  }
+
+  footer p {
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+  }
 }
