@@ -500,7 +500,7 @@ padding-bottom: 0.5rem;
   .course-box {
     width: 100%;
     margin: 0.25rem 0;
-    background-color: rgba(246, 246, 246, 1);
+    background-color: rgba(63, 64, 63, 0.2);
     border-radius: 2px;
     padding: 0;
   }
