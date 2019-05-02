@@ -114,6 +114,20 @@ nav a {
   text-decoration: none;
   color: black;
   opacity: 0.8;
+  transition: color 200ms ease-out 50ms;
+}
+
+nav a:hover {
+  color: #778899;
+}
+
+nav a .login {
+  transition-property: color;
+  transition-duration: 200ms;
+}
+
+.login:active {
+  color: #dc143c;
 }
 
 nav {
@@ -121,7 +135,7 @@ nav {
 }
 
 /* Mobile-Menu */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .logo h1 {
     display: none;
   }
@@ -191,6 +205,12 @@ nav {
   width: 75%;
   padding: 0.5rem 0;
   opacity: 1;
+  transition-property: background-color;
+  transition-duration: 750ms;
+}
+
+.login-button:hover {
+  background-color: cadetblue;
 }
 
 h4 a {
@@ -199,7 +219,7 @@ h4 a {
 }
 
 /* Mobile Banner */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   #banner {
     flex-direction: column;
   }
@@ -295,6 +315,11 @@ h4 a {
 .info-text a {
   text-decoration: none;
   color: cadetblue;
+  transition: color 250ms linear 100ms;
+}
+
+.info-text a:hover {
+  color: #ffa500;
 }
 
 .info-text h3,
@@ -303,7 +328,7 @@ padding-bottom: 0.5rem;
 }
 
 /* Mobile-Information */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   #information {
     width: 100%;
     padding: 0;
@@ -415,7 +440,7 @@ padding-bottom: 0.5rem;
 }
 
 /* Mobile Courses */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .course-img img {
     display: none;
   }
@@ -544,7 +569,7 @@ padding-bottom: 0.5rem;
 }
 
 /* Thesis Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .video {
     margin: 0 0 1.5rem 0;
     width: 100%;
@@ -568,19 +593,30 @@ padding-bottom: 0.5rem;
 footer {
   border-top: 0.5px solid rgba(63, 64, 63, 0.5);
   padding: 1rem 1.5rem 3rem 1.5rem;
-  opacity: 0.8;
 }
 
 footer p {
   flex-grow: 1;
 }
 
-footer li {
+footer a {
   padding-left: 1rem;
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+  transition-property: color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 200ms;
 }
 
+footer a:hover {
+  color: rgb(100, 200, 360);
+}
+
+
 /* Footer Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   footer li {
     display: none;
   }
