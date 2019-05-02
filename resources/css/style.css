@@ -158,7 +158,7 @@ nav {
 
 /* Banner Styling */
 #banner {
-  background-color: rgba(246, 246, 246, 1);
+  background-color: rgba(63, 64, 63, 0.2);
   margin-top: 4rem;
 }
 
@@ -201,7 +201,7 @@ nav {
 
 .headline .login-button {
   border-radius: 2px;
-  background-color: black;
+  background-color: rgba(63, 64, 63, 1);
   width: 75%;
   padding: 0.5rem 0;
   opacity: 1;
@@ -305,7 +305,7 @@ h4 a {
 }
 
 #lecturer {
-  background-color: rgba(246, 246, 246, 1);
+  background-color: rgba(63, 64, 63, 0.2);
 }
 
 .info-text h3 {
@@ -382,7 +382,7 @@ padding-bottom: 0.5rem;
 
 /* Courses Styling */
 #desktop-view-courses {
-  background-color: rgba(246, 246, 246, 1);
+  background-color: rgba(63, 64, 63, 0.1);
   padding: 2rem 0;
 }
 
@@ -507,10 +507,6 @@ padding-bottom: 0.5rem;
 }
 
 /* Thesis */
-#thesis {
-  background-color: rgba(246, 246, 246, 0.4);
-}
-
 #thesis h2 {
   padding: 2rem 0;
   text-align: center;
@@ -565,7 +561,7 @@ padding-bottom: 0.5rem;
 }
 
 #fisma {
-  background-color: rgba(246, 246, 246, 1);
+  background-color: rgba(63, 64, 63, 0.2);
 }
 
 /* Thesis Mobile */
