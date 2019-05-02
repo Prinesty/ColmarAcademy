@@ -68,7 +68,6 @@ header .mobile-menu {
   display: none;
 }
 
-
 /* Heading Styling */
 header {
   background-color: white;
@@ -143,10 +142,9 @@ nav {
   }
 }
 
-
 /* Banner Styling */
 #banner {
-  background-color: rgba(210, 204, 161, 0.6);
+  background-color: rgba(246, 246, 246, 1);
   margin-top: 4rem;
 }
 
@@ -218,7 +216,8 @@ h4 a {
   }
 
   #banner .headline {
-    padding-bottom: 2rem;
+    width: 100%;
+    padding: 2rem 0;
     box-sizing: content-box;
     height: auto;
     justify-content: center;
@@ -226,15 +225,17 @@ h4 a {
   }
 
   #banner h2 {
-    margin-left: 1rem;
+    margin: 0 1rem;
+    font-size: 3rem;
   }
 
   #banner h3 {
-    margin: 0 1rem 1.125rem 1rem;
+    margin: 2rem 1rem 1.5rem 1rem;
   }
+
   #banner .login-button {
-      margin: 0 1rem;
-      width: auto;
+    margin: 0 1rem;
+    width: auto;
   }
 }
 
@@ -244,7 +245,7 @@ h4 a {
   margin-right: 2rem;
 }
 
-#information p {
+.content p {
   padding: 1.5rem 0;
   word-spacing: 0.1rem;
   font-weight: 100;
@@ -284,7 +285,7 @@ h4 a {
 }
 
 #lecturer {
-  background-color: rgba(210, 204, 161, 0.4);
+  background-color: rgba(246, 246, 246, 1);
 }
 
 .info-text h3 {
@@ -348,11 +349,15 @@ padding-bottom: 0.5rem;
   #info-col-2 #lecturer {
     background-color: rgba(0, 0, 0, 0)
   }
+
+  .info-text {
+    margin-left: 1rem;
+  }
 }
 
 /* Courses Styling */
 #desktop-view-courses {
-  background-color: rgba(210, 204, 161, 0.4);
+  background-color: rgba(246, 246, 246, 1);
   padding: 2rem 0;
 }
 
@@ -451,7 +456,10 @@ padding-bottom: 0.5rem;
 
   #desktop-view-courses {
     padding: 2rem 0;
+    background-color: white;
+    border-top: 1px solid rgba(210, 204, 161, 0.4);
   }
+
   #desktop-view-courses h2 {
     margin: 0 0 1rem 0;
   }
@@ -467,15 +475,15 @@ padding-bottom: 0.5rem;
   .course-box {
     width: 100%;
     margin: 0.25rem 0;
-    background-color: rgba(226, 192, 68, 1);
-    border-radius: 4px;
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 2px;
     padding: 0;
   }
 }
 
 /* Thesis */
 #thesis {
-  background-color: rgba(246, 246, 246, 1);
+  background-color: rgba(246, 246, 246, 0.4);
 }
 
 #thesis h2 {
@@ -532,7 +540,7 @@ padding-bottom: 0.5rem;
 }
 
 #fisma {
-  background-color: rgba(244, 200, 200, 0.4);
+  background-color: rgba(246, 246, 246, 1);
 }
 
 /* Thesis Mobile */
@@ -573,10 +581,6 @@ footer li {
 
 /* Footer Mobile */
 @media only screen and (max-width: 480px) {
-  footer {
-  margin: 1.5rem 0 0 0;
-  }
-
   footer li {
     display: none;
   }
@@ -584,6 +588,6 @@ footer li {
   footer p {
     justify-content: center;
     font-size: 0.8rem;
-    padding: 1rem 0;
+    padding: 2.5rem 0 0 0;
   }
 }
