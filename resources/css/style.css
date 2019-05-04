@@ -610,6 +610,24 @@ footer a:hover {
   color: rgb(100, 200, 360);
 }
 
+footer span {
+  font-size: 1rem;
+  line-height: 1.2;
+  opacity: 0.8;
+}
+
+footer .social {
+  margin-bottom: 2rem;
+}
+
+.social i {
+  padding: 0 1rem;
+}
+
+.social a:hover {
+  color: red;
+}
+
 
 /* Footer Mobile */
 @media only screen and (max-width: 480px) {
