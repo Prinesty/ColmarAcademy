@@ -76,17 +76,14 @@ header {
   height: 4rem;
   position: fixed;
   z-index: 1;
-  border-bottom: 1px solid white;
   background-color: white;
   align-items: center;
-  justify-content: space-between;
   top: 0;
 }
 
 /* Logo and Heading */
 .logo {
   margin-left: 1.5rem;
-  align-items: center;
   flex-grow: 1;
 }
 
@@ -95,17 +92,12 @@ header {
   margin-right: 0.3rem;
 }
 
-.logo h1 {
-  margin: 0;
-  font-weight: 700;
-}
-
-#header h1 span {
+.heading span {
   opacity: 0.5;
 }
 
 /*Nav Styling */
-nav ul li {
+nav li {
   display: inline;
 }
 
