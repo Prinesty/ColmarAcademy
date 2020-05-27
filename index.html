@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
   </head>
   <body>
-    <!-- Header Section -->
-    <header class="flex-row">
+    <!-- Header Section Desktop -->
+    <header class="flex-row desktop">
       <!-- Logo and Company Name -->
-      <div class="flex-row logo">
+      <div class="logo flex-row">
         <a href="index.html"><img src="./resources/images/ic-logo.svg" alt="company logo"></a>
         <div class="heading">
           <h1>COLMAR<span>ACADEMY</span></h1>
@@ -21,35 +21,49 @@
       </div>
       <!-- Nav Bar within header -->
       <nav>
-        <ul class="desktop-menu">
+        <ul class="flex-row">
           <!-- Desktop Menu -->
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">For companies</a></li>
           <li><a class="login" href="#">Sign in</a></li>
         </ul>
-        <!-- Mobile Menu -->
-        <ul class="flex-row mobile-menu">
-          <span><li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="campus icon"></a></li></span>
-          <span><li><a href="#"><img src="./resources/images/ic-online.svg" alt="online icon"></a></li></span>
-          <span><li><a href="#"><img src="./resources/images/ic-login.svg" alt="login icon"></a></li></span>
+      </nav>
+    </header>
+        <!-- Header Minimized -->
+    <header class="flex-row mobile">
+      <div class="logo flex-row">
+        <a href="index.html"><img src="./resources/images/ic-logo.svg" alt="company logo"></a>
+        <div class="heading">
+          <h1>COLMAR<span>ACADEMY</span></h1>
+        </div>
+      </div>
+      <nav>
+        <ul class="flex-row">
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="campus icon"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg" alt="online icon"></a></li>
+          <span><li><a href="#"><img src="./resources/images/ic-login.svg" alt="login icon"></a></li>
         </ul>
       </nav>
     </header>
+
     <!-- Banner Section -->
-    <div id="banner" class="flex-row main-container">
-      <div class="large-banner">
-        <img src="./resources/images/banner.jpg" alt="main-banner">
-      </div>
-      <div class="headline flex-col">
-        <h2>Learn something new everyday</h2>
-        <h3>Lorem ipsum dolar sit amet,<br> consectetur adipiscing elit.</h3>
-        <h4 class="login-button"><a href="#">Start here</a></h3>
+    <div id="banner">
+      <div class="banner flex-row">
+        <div class="large-banner">
+          <img src="./resources/images/banner.jpg" alt="main-banner">
+        </div>
+        <div class="headline flex-col">
+          <h2>Learn something new everyday</h2>
+          <h3>Lorem ipsum dolar sit amet,<br> consectetur adipiscing elit.</h3>
+          <h4 class="login-button"><a href="#">Start here</a></h3>
+        </div>
       </div>
     </div>
+
     <!-- Information Section -->
-    <div id="information" class="flex-row main-container">
-      <div id="info-col-1" class="large-banner">
+    <div class="information flex-row main-container">
+      <div class="next-banner">
         <img src="./resources/images/information-main.jpg" alt="student reading on campus">
         <div class="flex-col content">
           <h2>It doesn't hurt to keep practicing</h2>
@@ -58,15 +72,10 @@
         </div>
       </div>
       <!--Side Info Section -->
-      <div id="info-col-2" class="flex-col newsletter">
+      <div class="flex-col info-col-2">
         <div class="flex-row">
-          <div class="desktop-view">
+          <div class="side">
             <img src="./resources/images/information-orientation.jpg" alt="aerial view of students walking on a sunny day">
-          </div>
-          <div class="flex-col">
-            <div class="mobile-view">
-              <img src="./resources/images/information-orientation-mobile.jpg" alt="aerial view of students walking on a sunny day">
-            </div>
           </div>
           <div class="info-text">
             <h3>Orientation date</h3>
@@ -75,13 +84,8 @@
           </div>
         </div>
         <div class="flex-row">
-          <div class="desktop-view">
+          <div class="side">
             <img src="./resources/images/information-campus.jpg" alt="lecture room">
-          </div>
-          <div class="flex-col">
-            <div class="mobile-view">
-              <img src="./resources/images/information-campus-mobile.jpg" alt="lecture room">
-            </div>
           </div>
           <div class="info-text">
             <h3>Our campus</h3>
@@ -89,28 +93,24 @@
             <a href="#">Read more</a>
           </div>
         </div>
-        <div id="lecturer" class="flex-row">
-          <div class="desktop-view">
+        <div class="flex-row lecturer">
+          <div class="side">
             <img src="./resources/images/information-guest-lecture.jpg" alt="picture of Oliver Sack (lecturer)">
-          </div>
-          <div class="flex-col">
-            <div class="mobile-view">
-              <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="picture of Oliver Sack (lecturer)">
-            </div>
           </div>
           <div class="info-text">
             <h3>Our guest lecture</h3>
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <p>Join a keynote with Oliver Sack about <br>music in medical treatment</p>
             <a href="#">Read more</a>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Courses Section -->
-    <div id="desktop-view-courses" class="courses main-container">
+    <div class="course main-container">
       <h2>Start learning</h2>
         <div class="courses">
-          <div class="flex-row" id="course1">
+          <div class="flex-row course-wrap">
             <div class="course-box">
               <div class="course-img">
                 <img src="./resources/images/course-software.jpg" alt="apple desktop unit">
@@ -136,7 +136,7 @@
               <p>User Experience Design, User Research, Visual Design</p>
             </div>
         </div>
-        <div class="flex-row" id="course2">
+        <div class="flex-row course-wrap">
             <div class="course-box">
               <div class="course-img">
                 <img src="./resources/images/course-data.jpg" alt="opened sleek laptop">
@@ -164,10 +164,11 @@
           </div>
         </div>
     </div>
+
     <!-- Thesis Section -->
-    <div class="main-container" id="thesis">
+    <div id="thesis">
       <h2>Thesis exhibits</h2>
-      <div class="flex-row">
+      <div class="thesis flex-row">
         <div class="video">
           <video src="./resources/videos/thesis.mp4" preload="auto" autoplay controls></video>
           <h3>Reimagine urban</h3>
@@ -175,7 +176,7 @@
         </div>
         <!-- Side Thesis Section -->
         <div class="thesis-side">
-          <div class="flex-row" id="fisma">
+          <div class="flex-row closing">
             <div class="thesis-img">
               <img src="./resources/images/thesis-fisma.jpg" alt="showcase of prototype design">
             </div>
@@ -184,7 +185,7 @@
               <p>Designer showcase of new prototype products</p>
             </div>
           </div>
-          <div class="flex-row">
+          <div class="flex-row closing">
             <div class="thesis-img">
               <img src="./resources/images/thesis-now-and-then.jpg" alt="tall building in New York">
             </div>
@@ -196,16 +197,19 @@
         </div>
       </div>
     </div>
+
     <!-- Footer Section -->
-    <footer class="main-container">
-      <div class="social flex-row">
-       <span>Share this discovery with friends on</span>
+    <footer>
+      <div class="social">
+       <h1>Share this discovery with friends on</h1>
+     </div>
+      <div class="flex-row icon">
        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
        <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
        <a href="#"><i class="fa fa-youtube fa-lg"></i></a>
      </div>
-     <div class="flex-row">
+     <div class="closed flex-row">
       <p>© 2016 Colmar Academy. All rights reserved</p>
       <ul class="flex-row">
         <li><a href="#">Terms</a></li>
